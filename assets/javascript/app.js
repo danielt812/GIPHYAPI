@@ -62,7 +62,7 @@ function createButtons()
     for (var i = 0; i < gifList.length; i++)
     {
         //Create button with jQuery
-        var button = $("<button>");
+        var button = $("<div>");
         //Give buttons class
         button.addClass("gifButton");
         //Give buttons data attribute
@@ -80,9 +80,11 @@ $("#addGif").on("click", function(event)
 {
     event.preventDefault();
     //Grab input from html
-    var gif = $("#gifInput").val();
+    var gif = $("#gifInput").val().trim();
     //Add cartoon to gifArray
     gifList.push(gif);
+    //Empty value in input box
+    $("#gifInput").val("")
     //Call createButtons function to update new button
     createButtons();
 })
