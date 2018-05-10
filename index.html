@@ -13,25 +13,38 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <!--Buttons at top of page-->
-    <div id="gifButtons">
-
+    <header>
+        <!--Row 1-->
+        <div class="row">
+            <!--Column 12-->
+            <div class="col-md-9">
+                <!--Buttons at top of page-->
+                <div id="gifButtons"></div>
+            </div>
+            <div class="col-md-3">
+                <!--Adds gif to page-->
+                <form id="gifForm">
+                    <label for="gifInput">Add your favorite cartoon!</label><br>
+                    <input type="text" id="gifInput"><br>
+                    <input id="addGif" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--Container-->
+    <div class="container">
+        <!--Row 2-->
+        <div class="row">
+            <!--Column Left-->
+            <div class="col-md-12">
+                <!--Shows gifs-->
+                <div id="gifs"></div>
+            </div>
+        </div>
     </div>
-    <!--Adds gif to page-->
-    <form id="gifForm">
-        <label for="gifInput">Add a cartoon!</label>
-        <input type="text" id="gifInput"><br>
-
-        <input id="addGif" type="submit" value="Add a cartoon!">
-    </form>
-    <!--Shows gifs-->
-    <div id="gifs">
-
-    </div>
-    
-    <!--JQuery-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--JavaScript-->
-    <script src="assets/javascript/app.js"></script>
+<!--JQuery-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--JavaScript-->
+<script src="assets/javascript/app.js"></script>
 </body>
 </html>

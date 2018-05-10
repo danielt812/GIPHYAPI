@@ -3,7 +3,7 @@ $(document).ready(function(){
 //GLOBAL VARIABLES
 //=============================================================
 //Array of gifs here
-var gifList = ["Rick and Morty", "Futurama", "South Park", "Beavis and Butthead", "Daria", "The Simpsons", "Ren and Stimpy", "Family Guy"];
+var gifList = ["Rick and Morty", "South Park", "Spongebob", "Futurama", "BoJack Horseman"];
 
 //FUNCTIONS
 //======================================================
@@ -34,10 +34,10 @@ function displayGif()
             //Create image tag
             var gifImage = $("<img>");
             //Give image tag src to show image
-            gifImage.attr("src", results[i].images.fixed_height_still.url);
+            gifImage.attr("src", results[i].images.downsized_still.url);
             //Give gif data-still attribute
-            gifImage.attr("data-still", results[i].images.fixed_height_still.url);
-            gifImage.attr("data-animate", results[i].images.fixed_height.url);
+            gifImage.attr("data-still", results[i].images.downsized_still.url);
+            gifImage.attr("data-animate", results[i].images.downsized.url);
             gifImage.attr("data-state", "still");
             gifImage.addClass("gifImage");
             //Append ratingText and gifImage to gifDiv
