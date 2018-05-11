@@ -3,7 +3,7 @@ $(document).ready(function(){
 //GLOBAL VARIABLES
 //=============================================================
 //Array of gifs here
-var gifList = ["Neon", "Psychedelia", "Stars", "Nature", "Aurora Borealis"];
+var gifList = ["Animals", "Anime", "Cartoons", "Design", "Food", "Gaming", "Movies", "Music", "Nature", "Politics", "Reactions", "Science", "Sports", "TV Shows"];
 
 //FUNCTIONS
 //======================================================

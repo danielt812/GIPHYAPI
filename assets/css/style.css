@@ -47,7 +47,7 @@ header {
 
 #gifButtons {
     margin-top: 20px;
-    margin-left: 10%;
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 
@@ -57,7 +57,7 @@ header {
     padding: 10px;
     font-size: 26px;
     float: left;
-    margin: 20px;
+    margin: 15px;
     color: darkcyan;
     text-shadow: 0 0 20px blue;
 }
@@ -66,8 +66,8 @@ header {
 .gifButton:hover {
     cursor: pointer;
     padding: 10px;
-    color: deeppink;
-    text-shadow: 0 0 20px lavender;
+    color: magenta;
+    text-shadow: 0 0 20px darkmagenta;
 }
 
 #gifInput {
@@ -82,6 +82,14 @@ header {
     border: none;
     color: lime;
     text-shadow: 0 0 20px lavender;
+}
+
+#addGif:hover {
+    cursor: pointer;
+}
+
+#addGif:focus {
+    outline: none;
 }
 
 #gifs {
