@@ -114,10 +114,11 @@ header {
 
 p {
     text-align: center;
-    font-family: interface, Helvetica Neue, helvetica, sans-serif;
+    font-family: 'pacifico', cursive;
     font-weight: bold;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 26px;
+    color: black;
+    text-shadow: 0 0 20px deeppink;
 }
 
 img {
