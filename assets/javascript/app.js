@@ -3,7 +3,7 @@ $(document).ready(function(){
 //GLOBAL VARIABLES
 //=============================================================
 //Array of gifs here
-var gifList = ["Neon", "Psychedelia", "Design"];
+var gifList = ["Neon", "Psychedelia", "Stars", "Nature", "Aurora Borealis"];
 
 //FUNCTIONS
 //======================================================
