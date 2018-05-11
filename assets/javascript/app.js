@@ -3,7 +3,7 @@ $(document).ready(function(){
 //GLOBAL VARIABLES
 //=============================================================
 //Array of gifs here
-var gifList = ["Rick and Morty", "South Park", "Spongebob", "Futurama", "BoJack Horseman"];
+var gifList = ["Neon", "Psychedelia", "Design"];
 
 //FUNCTIONS
 //======================================================

@@ -1,11 +1,44 @@
 body {
-    background: linear-gradient(to right, #000000, #0578c5, #02f7ff, #0578c5, #000000);
+    background: url(../images/giphyLounge.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
+
 
 header {
     width: 100%;
     text-align: center;
     background: #000000;
+    opacity: .9;
+}
+
+#giphyLounge {
+    position: relative;
+    font-family: 'Sacramento', cursive;
+    color: lime;
+    text-shadow: 0 0 20px lavender;
+    font-size: 50px;
+}
+
+#giphyLounge:after {
+    content: attr(data-text);
+    position: absolute;
+    z-index: -1;
+    color: deeppink;
+    filter: blur(15px)
+}
+
+#giphyLounge:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: deeppink;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
 }
 
 .container {
@@ -15,33 +48,40 @@ header {
 #gifButtons {
     margin-top: 20px;
     margin-left: 10%;
+    margin-bottom: 20px;
 }
 
 .gifButton {
-    font-family: interface, Helvetica Neue, helvetica, sans-serif;
+    position: relative;
+    font-family: 'Pacifico', cursive;
     padding: 10px;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 26px;
     float: left;
     margin: 20px;
-    color: white;
+    color: darkcyan;
+    text-shadow: 0 0 20px blue;
 }
 
 
 .gifButton:hover {
     cursor: pointer;
     padding: 10px;
-    background: linear-gradient(to right, #000000, #0578c5, #02f7ff, #0578c5, #000000);
-    /* background: linear-gradient(to right, #000000, #0578c5, #02f7ff, #0578c5, #000000); */
-    border-radius: 25px;
+    color: deeppink;
+    text-shadow: 0 0 20px lavender;
+}
+
+#gifInput {
+    height: 30px;
 }
 
 #addGif {
     margin-top: 20px;
-    background: linear-gradient(to right, #000000, #0578c5, #02f7ff, #0578c5, #000000);
-    /* background: none; */
+    font-family: 'Sacramento', cursive;
+    font-size: 34px;
+    background: none;
     border: none;
-    color: white;
+    color: lime;
+    text-shadow: 0 0 20px lavender;
 }
 
 #gifs {
