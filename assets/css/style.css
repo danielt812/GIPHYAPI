@@ -67,8 +67,8 @@ header {
 .gifButton:hover {
     cursor: pointer;
     padding: 10px;
-    color: magenta;
-    text-shadow: 0 0 20px darkmagenta;
+    color: deeppink;
+    text-shadow: 0 0 20px lavender;
 }
 
 #addGif {
