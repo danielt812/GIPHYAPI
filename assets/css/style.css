@@ -61,6 +61,7 @@ header {
     margin: 15px;
     color: darkcyan;
     text-shadow: 0 0 20px blue;
+    transition: 0.4s all;
 }
 
 
@@ -95,7 +96,7 @@ header {
 }
 
 #gifForm {
-    float: right;
+    float: left;
     font-family: interface, Helvetica Neue, helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -130,3 +131,4 @@ img {
     min-height: 270px;
     max-height: 270px;
 }
+
