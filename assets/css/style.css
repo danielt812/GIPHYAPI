@@ -1,134 +1,155 @@
 body {
-    background: url(../images/giphyLounge.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
+  background-color: #000000;
+  background: url(../images/giphyLounge.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-
 header {
-    width: 100%;
-    text-align: center;
-    background: #000000;
-    opacity: .9;
+  width: 100%;
+  text-align: center;
+  background: #000000;
+  opacity: 0.9;
+}
+
+.flex-row {
+  display: flex;
+}
+
+@media screen and (max-width: 1034px) {
+  .flex-row {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .order-1 {
+    order: -1;
+  }
+
+  .gifItem {
+    margin-bottom: 4em;
+  }
 }
 
 #giphyLounge {
-    position: relative;
-    font-family: 'Sacramento', cursive;
-    color: lime;
-    text-shadow: 0 0 20px lavender;
-    font-size: 50px;
-    margin-bottom: 20px;
+  position: relative;
+  font-family: "Sacramento", cursive;
+  color: lime;
+  text-shadow: 0 0 20px lavender;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
 #giphyLounge:after {
-    content: attr(data-text);
-    position: absolute;
-    z-index: -1;
-    color: deeppink;
-    filter: blur(15px)
+  content: attr(data-text);
+  position: absolute;
+  z-index: -1;
+  color: deeppink;
+  filter: blur(15px);
 }
 
 #giphyLounge:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: deeppink;
-    z-index: -2;
-    opacity: .5;
-    filter: blur(40px);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: deeppink;
+  z-index: -2;
+  opacity: 0.5;
+  filter: blur(40px);
 }
 
 .container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #gifButtons {
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .gifButton {
-    position: relative;
-    font-family: 'Pacifico', cursive;
-    padding: 10px;
-    font-size: 26px;
-    float: left;
-    margin: 15px;
-    color: darkcyan;
-    text-shadow: 0 0 20px blue;
-    transition: 0.4s all;
+  position: relative;
+  font-family: "Pacifico", cursive;
+  padding: 10px;
+  font-size: 26px;
+  float: left;
+  margin: 15px;
+  color: darkcyan;
+  text-shadow: 0 0 20px blue;
+  transition: 0.4s all;
 }
 
-
 .gifButton:hover {
-    cursor: pointer;
-    padding: 10px;
-    color: deeppink;
-    text-shadow: 0 0 20px lavender;
+  cursor: pointer;
+  padding: 10px;
+  color: deeppink;
+  text-shadow: 0 0 20px lavender;
 }
 
 #addGif {
-    margin-top: 10px;
-    font-family: 'Sacramento', cursive;
-    font-size: 34px;
-    background: none;
-    border: none;
-    color: lime;
-    text-shadow: 0 0 20px lavender;
+  margin-top: 10px;
+  font-family: "Sacramento", cursive;
+  font-size: 34px;
+  background: none;
+  border: none;
+  color: lime;
+  text-shadow: 0 0 20px lavender;
 }
 
 #addGif:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #addGif:focus {
-    outline: none;
+  outline: none;
 }
 
 #gifs {
-    margin-top: 125px;
-    margin-left: 70px;
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 125px;
 }
 
 #gifForm {
-    float: left;
-    font-family: interface, Helvetica Neue, helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 20px;
-    margin-top: 30px;
-    padding: 10px;
-    margin-right: 40%;
-
-}
-
-.gifItem {
-    float: left;
-    margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: interface, Helvetica Neue, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 20px;
+  margin-top: 30px;
+  padding: 10px;
 }
 
 p {
-    text-align: center;
-    font-family: 'pacifico', cursive;
-    font-weight: bold;
-    font-size: 26px;
-    color: black;
-    text-shadow: 0 0 20px deeppink;
+  text-align: center;
+  font-family: "pacifico", cursive;
+  font-weight: bold;
+  font-size: 26px;
+  color: black;
+  text-shadow: 0 0 20px deeppink;
 }
 
 img {
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    min-width: 480px;
-    max-width: 480px;
-    min-height: 270px;
-    max-height: 270px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  min-width: 480px;
+  max-width: 480px;
+  min-height: 270px;
+  max-height: 270px;
 }
 
+/* BootStrap overrides */
+.row {
+  margin: 0px;
+  padding: 0px;
+}
