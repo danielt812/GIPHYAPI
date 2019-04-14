@@ -3,15 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <!--Title-->
-    <title>GIPHY API</title>
+    <title>Giphy Lounge</title>
     <!--Reset-->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <!--BootStrap-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-      crossorigin="anonymous"
     />
     <!--StyleSheet-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -20,17 +18,22 @@
       href="https://fonts.googleapis.com/css?family=Pacifico|Sacramento"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/palmTree.png"
+      type="image/png"
+    />
   </head>
   <body>
     <header>
       <!--Row 1-->
-      <div class="row flex-row">
+      <div class="row flex">
         <!--Column 12-->
-        <div class="col-md-8">
+        <div class="col-md-8 no-padding">
           <!--Buttons at top of page-->
           <div id="gifButtons"></div>
         </div>
-        <div class="col-md-4 order-1">
+        <div class="col-md-4 flex-order no-padding">
           <!--Adds gif to page-->
           <form id="gifForm">
             <label for="gifInput" id="giphyLounge" data-text="neon"
@@ -42,14 +45,16 @@
         </div>
       </div>
     </header>
-    <!--Row 2-->
-    <div class="row">
-      <!--Column Left-->
-      <div class="col-md-12">
-        <!--Shows gifs-->
-        <div id="gifs"></div>
+    <section>
+      <!--Row 2-->
+      <div class="row">
+        <!--Column Left-->
+        <div class="col-md-12 no-padding">
+          <!--Shows gifs-->
+          <div id="gifs"></div>
+        </div>
       </div>
-    </div>
+    </section>
     <!--JQuery-->
     <script
       type="text/javascript"
