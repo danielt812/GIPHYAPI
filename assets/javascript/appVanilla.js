@@ -61,7 +61,7 @@ function displayGif(attribute) {
         var rating = data[i].rating;
         // Create paragraph with item's rating
         var ratingText = document.createElement('p');
-        ratingText.textContent = rating;
+        ratingText.textContent = 'Rating: ' + rating;
         // Create image tag
         var gifImage = document.createElement('img');
         // Give image tag src to show image
