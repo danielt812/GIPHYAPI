@@ -101,6 +101,23 @@ $(document).ready(function() {
     createButtons();
   });
 
+  $('#removeCategory').on('click', function(event) {
+    event.preventDefault();
+    gifList.pop();
+    createButtons();
+  });
+
+  $(document).on('keydown', function(event) {
+    if (event.keyCode == 8) {
+      gifList.pop();
+      createButtons();
+    }
+  });
+
+  // document.addEventListener('keyup', function(event) {
+  //   console.log(event);
+  // });
+
   $('body').on('click', '.gifImage', function() {
     // Make variable to see if images is still or animated
     var state = $(this).attr('data-state');

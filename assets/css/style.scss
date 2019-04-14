@@ -90,8 +90,7 @@ header {
     font-family: 'Sacramento', cursive;
     color: color(green);
     text-shadow: 0 0 20px color(lavender);
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 3rem;
     &:after {
       content: attr(data-text);
       position: absolute;
@@ -128,8 +127,9 @@ header {
     margin-top: 30px;
     padding: 10px;
   }
-  #addGif {
-    margin-top: 10px;
+  #addGif,
+  #removeCategory {
+    text-align: center;
     font-family: 'Sacramento', cursive;
     font-size: 34px;
     background: none;

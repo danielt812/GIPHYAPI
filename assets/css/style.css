@@ -56,8 +56,7 @@ header {
     font-family: 'Sacramento', cursive;
     color: #00ff00;
     text-shadow: 0 0 20px #e6e6fa;
-    font-size: 50px;
-    margin-bottom: 20px; }
+    font-size: 3rem; }
     header #giphyLounge:after {
       content: attr(data-text);
       position: absolute;
@@ -89,17 +88,20 @@ header {
     margin: 20px;
     margin-top: 30px;
     padding: 10px; }
-  header #addGif {
-    margin-top: 10px;
+  header #addGif,
+  header #removeCategory {
+    text-align: center;
     font-family: 'Sacramento', cursive;
     font-size: 34px;
     background: none;
     border: none;
     color: #00ff00;
     text-shadow: 0 0 20px #e6e6fa; }
-    header #addGif:hover {
+    header #addGif:hover,
+    header #removeCategory:hover {
       cursor: pointer; }
-    header #addGif:focus {
+    header #addGif:focus,
+    header #removeCategory:focus {
       outline: none; }
 
 section #gifs {
