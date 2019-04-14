@@ -1,44 +1,58 @@
+$pink: #ff1493;
+$green: #00ff00;
+$lightblue: #008b8b;
+$blue: blue;
+$lavender: #e6e6fa;
+$black: #000000;
+
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: #000000;
+  background-color: $black;
   background: url(../images/giphyLounge.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+}
 
 header {
   width: 100%;
   text-align: center;
-  background: #000000;
-  opacity: 0.9; }
+  background: $black;
+  opacity: 0.9;
+}
 
 p {
   text-align: center;
   font-family: 'pacifico', cursive;
   font-weight: bold;
   font-size: 26px;
-  color: #000000;
-  text-shadow: 0 0 20px #ff1493; }
+  color: $black;
+  text-shadow: 0 0 20px #ff1493;
+}
 
 img {
-  border: solid 1px #000000;
+  border: solid 1px $black;
   min-width: 480px;
   max-width: 480px;
   min-height: 270px;
-  max-height: 270px; }
+  max-height: 270px;
+}
 
 .row {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
 .flex-row {
-  display: flex; }
+  display: flex;
+}
 
 .container {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .gifButton {
   position: relative;
@@ -47,40 +61,46 @@ img {
   font-size: 26px;
   float: left;
   margin: 15px;
-  color: #008b8b;
-  text-shadow: 0 0 20px blue;
-  transition: 0.4s all; }
-  .gifButton:hover {
+  color: $lightblue;
+  text-shadow: 0 0 20px $blue;
+  transition: 0.4s all;
+  &:hover {
     cursor: pointer;
     padding: 10px;
-    color: #ff1493;
-    text-shadow: 0 0 20px #e6e6fa; }
+    color: $pink;
+    text-shadow: 0 0 20px $lavender;
+  }
+}
 
 #giphyLounge {
   position: relative;
   font-family: 'Sacramento', cursive;
-  color: #00ff00;
-  text-shadow: 0 0 20px #e6e6fa;
+  color: $green;
+  text-shadow: 0 0 20px $lavender;
   font-size: 50px;
-  margin-bottom: 20px; }
-  #giphyLounge:after {
+  margin-bottom: 20px;
+  &:after {
     content: attr(data-text);
     position: absolute;
     z-index: -1;
-    color: #ff1493;
-    filter: blur(15px); }
-  #giphyLounge:before {
+    color: $pink;
+    filter: blur(15px);
+  }
+  &:before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #ff1493;
+    background: $pink;
     z-index: -2;
     opacity: 0.5;
-    filter: blur(40px); }
+    filter: blur(40px);
+  }
+}
 
 #gifButtons {
-  margin: 40px 20px 0 20px; }
+  margin: 40px 20px 0 20px;
+}
 
 #addGif {
   margin-top: 10px;
@@ -88,12 +108,15 @@ img {
   font-size: 34px;
   background: none;
   border: none;
-  color: #00ff00;
-  text-shadow: 0 0 20px #e6e6fa; }
-  #addGif:hover {
-    cursor: pointer; }
-  #addGif:focus {
-    outline: none; }
+  color: $green;
+  text-shadow: 0 0 20px $lavender;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
 
 #gifs {
   margin-top: 125px;
@@ -101,7 +124,8 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+}
 
 #gifForm {
   display: flex;
@@ -113,15 +137,20 @@ img {
   color: #ffffff;
   margin: 20px;
   margin-top: 30px;
-  padding: 10px; }
+  padding: 10px;
+}
 
 @media screen and (max-width: 1034px) {
   .flex-row {
     flex-direction: column !important;
-    align-items: center; }
+    align-items: center;
+  }
 
   .order-1 {
-    order: -1; }
+    order: -1;
+  }
 
   .gifItem {
-    margin-bottom: 4em; } }
+    margin-bottom: 4em;
+  }
+}
