@@ -175,7 +175,6 @@ document.addEventListener('click', function(event) {
 });
 
 document.addEventListener('click', function(event) {
-  console.log(event.target.classList.value);
   if (event.target && event.target.classList.value === 'gifButton') {
     var target = event.target;
     var attribute = target.getAttribute('data-name');
