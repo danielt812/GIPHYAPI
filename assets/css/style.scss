@@ -31,7 +31,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: color(black);
-  background: url(../images/giphyLounge.jpg) no-repeat center center fixed;
+  background: url('../images/giphyLounge.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -154,7 +154,7 @@ section {
     justify-content: space-evenly;
     align-items: center;
   }
-  .gifItem:hover {
+  .gifImage:hover {
     cursor: pointer;
   }
 }
